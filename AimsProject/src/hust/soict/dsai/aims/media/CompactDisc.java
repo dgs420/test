@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class CompactDisc extends Disc  implements Playable{
 	private String artist;
-	private ArrayList<Track> tracks;
+	private ArrayList<Track> tracks = new ArrayList<>();
 
 	public CompactDisc() {
 		// TODO Auto-generated constructor stub
@@ -28,6 +28,7 @@ public class CompactDisc extends Disc  implements Playable{
             System.out.println("The track is already added.");
         } else {
             tracks.add(track);
+            System.out.println("Track added");
         }
     }
 	
@@ -39,7 +40,7 @@ public class CompactDisc extends Disc  implements Playable{
 	        }
 	    }
 	 
-	 @Override
+	 
 	 public String toString() {
 			return "CD - Id: " + this.getId() + " - " + this.getTitle() + " - " + this.getCategory() + " - " + this.getDirector() + " - " + this.getLength() + " : " + this.getCost() + " $";
 		}
