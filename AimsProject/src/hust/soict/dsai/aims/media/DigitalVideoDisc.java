@@ -38,17 +38,4 @@ public class DigitalVideoDisc extends Disc  implements Playable{
 	
 
 
-//	public boolean isMatch(String search) {
-//		if(title.toLowerCase()).equals(search.toLowerCase())) return true;
-//		return false;
-//        
-//    }
-
-//	public String getDirector() {
-//		return director;
-//	}
-//	public int getLength() {
-//		return length;
-//	}
-
 }
